@@ -160,5 +160,8 @@ fabric.properties
 /HELP.md
 /.gitattributes
 /target
+.mvn
+mvnw.cmd
+mvnw
 
 
