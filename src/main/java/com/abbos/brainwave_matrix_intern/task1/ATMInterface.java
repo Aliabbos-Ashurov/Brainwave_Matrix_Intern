@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 public class ATMInterface {
 
-    private static double balance = 1000.00; // Initial balance
-    private static Scanner scanner = new Scanner(System.in);
+    private static double BALANCE = 1000.00; // Initial balance
+    private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.println("Welcome to the ATM Machine!");
@@ -49,15 +49,15 @@ public class ATMInterface {
     }
 
     private static int getUserChoice() {
-        while (!scanner.hasNextInt()) {
+        while (!SCANNER.hasNextInt()) {
             System.out.println("Invalid input. Please enter a number between 1 and 4.");
-            scanner.next();
+            SCANNER.next();
         }
-        return scanner.nextInt();
+        return SCANNER.nextInt();
     }
 
     private static void viewBalance() {
-        System.out.printf("\nYour current balance is: $%.2f\n", balance);
+        System.out.printf("\nYour current balance is: $%.2f\n", BALANCE);
     }
 
     private static void deposit() {
@@ -65,7 +65,7 @@ public class ATMInterface {
         double amount = getValidAmount();
 
         if (amount > 0) {
-            balance += amount;
+            BALANCE += amount;
             System.out.printf("$%.2f deposited successfully.\n", amount);
             viewBalance();
         } else {
@@ -78,8 +78,8 @@ public class ATMInterface {
         double amount = getValidAmount();
 
         if (amount > 0) {
-            if (amount <= balance) {
-                balance -= amount;
+            if (amount <= BALANCE) {
+                BALANCE -= amount;
                 System.out.printf("$%.2f withdrawn successfully.\n", amount);
                 viewBalance();
             } else {
@@ -91,11 +91,11 @@ public class ATMInterface {
     }
 
     private static double getValidAmount() {
-        while (!scanner.hasNextDouble()) {
+        while (!SCANNER.hasNextDouble()) {
             System.out.println("Invalid input. Please enter a valid amount.");
-            scanner.next();
+            SCANNER.next();
         }
-        return scanner.nextDouble();
+        return SCANNER.nextDouble();
     }
 }
 
