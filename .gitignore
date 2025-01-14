@@ -165,3 +165,6 @@ mvnw.cmd
 mvnw
 
 
+!/mvnw
+!/mvnw.cmd
+!/.gitattributes
