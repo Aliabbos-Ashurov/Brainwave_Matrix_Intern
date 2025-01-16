@@ -1,4 +1,4 @@
-package com.abbos.brainwave_matrix_intern.task2.enums;
+package com.abbos.brainwave_matrix_intern.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static com.abbos.brainwave_matrix_intern.task2.enums.Permission.*;
+import static com.abbos.brainwave_matrix_intern.enums.Permission.*;
 
 @Getter
 @AllArgsConstructor

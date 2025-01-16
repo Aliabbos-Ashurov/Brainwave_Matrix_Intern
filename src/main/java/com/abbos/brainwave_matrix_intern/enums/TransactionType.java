@@ -1,4 +1,4 @@
-package com.abbos.brainwave_matrix_intern.task2.enums;
+package com.abbos.brainwave_matrix_intern.enums;
 
 /**
  * @author Aliabbos Ashurov
