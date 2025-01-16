@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: Brainwave_Matrix_Intern
+
+
+
+token:
+  expiration:
+    access: 86400000    # 24 hours
+    refresh: 604800000  # 7 days
+  secret-key: vpwGiG8Hh659YkRNBnBZIP1a6pRWSfLBKyd4f4MigA8
+
+
+cors:
+  allowedHeaders: [ "Accept", "Accept-Language","Origin","Content-Type","Authorization" ]
+  allowedOrigins: [ "*" ]
+  allowedMethods: [ "GET","POST","DELETE","PUT" ,"PATCH","OPTIONS" ,"HEAD" ]
+  urlPattern: "/**"
+  allowCredentials: true
+
+project:
+  host: localhost
+server:
+  port: 8080
