@@ -1,7 +1,7 @@
-package com.abbos.brainwave_matrix_intern.task2.dto.auth;
+package com.abbos.brainwave_matrix_intern.dto.auth;
 
-import com.abbos.brainwave_matrix_intern.task2.dto.marker.Response;
-import com.abbos.brainwave_matrix_intern.task2.enums.TokenType;
+import com.abbos.brainwave_matrix_intern.dto.marker.Response;
+import com.abbos.brainwave_matrix_intern.enums.TokenType;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import jakarta.validation.constraints.NotNull;

@@ -1,11 +1,11 @@
-package com.abbos.brainwave_matrix_intern.task2.service.token;
+package com.abbos.brainwave_matrix_intern.service.token;
 
-import com.abbos.brainwave_matrix_intern.task2.dto.Response;
-import com.abbos.brainwave_matrix_intern.task2.dto.auth.TokenResponseDTO;
-import com.abbos.brainwave_matrix_intern.task2.exception.TokenExpiredException;
-import com.abbos.brainwave_matrix_intern.task2.exception.UserNotFoundException;
-import com.abbos.brainwave_matrix_intern.task2.repository.UserRepository;
-import com.abbos.brainwave_matrix_intern.task2.utils.JwtTokenUtil;
+import com.abbos.brainwave_matrix_intern.dto.Response;
+import com.abbos.brainwave_matrix_intern.dto.auth.TokenResponseDTO;
+import com.abbos.brainwave_matrix_intern.exception.TokenExpiredException;
+import com.abbos.brainwave_matrix_intern.exception.UserNotFoundException;
+import com.abbos.brainwave_matrix_intern.repository.UserRepository;
+import com.abbos.brainwave_matrix_intern.utils.JwtTokenUtil;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;

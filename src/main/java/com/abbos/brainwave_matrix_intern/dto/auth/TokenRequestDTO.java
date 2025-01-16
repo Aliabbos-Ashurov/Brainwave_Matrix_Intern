@@ -1,6 +1,6 @@
-package com.abbos.brainwave_matrix_intern.task2.dto.auth;
+package com.abbos.brainwave_matrix_intern.dto.auth;
 
-import com.abbos.brainwave_matrix_intern.task2.dto.marker.Request;
+import com.abbos.brainwave_matrix_intern.dto.marker.Request;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
