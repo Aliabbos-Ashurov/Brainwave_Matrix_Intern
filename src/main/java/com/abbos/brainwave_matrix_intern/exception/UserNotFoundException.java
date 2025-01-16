@@ -1,6 +1,6 @@
-package com.abbos.brainwave_matrix_intern.task2.exception;
+package com.abbos.brainwave_matrix_intern.exception;
 
-import com.abbos.brainwave_matrix_intern.task2.utils.ErrorCode;
+import com.abbos.brainwave_matrix_intern.utils.ErrorCode;
 import org.springframework.http.HttpStatus;
 
 /**
